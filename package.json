@@ -18,6 +18,7 @@
   "dependencies": {
     "eslint": "^5.13.0",
     "express": "^4.16.4",
+    "helmet": "^3.15.0",
     "node": "^11.9.0"
   }
 }
