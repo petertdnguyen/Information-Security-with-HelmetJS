@@ -205,7 +205,7 @@ var ninetyDaysInMilliseconds = 90*24*60*60*1000;
 // ---- DO NOT EDIT BELOW THIS LINE ---------------------------------------
 
 module.exports = app;
-var api = require('server.js');
+var api = require('./server');
 app.use(express.static('public'));
 app.disable('strict-transport-security');
 app.use('/_api', api);
