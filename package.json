@@ -7,6 +7,10 @@
     "start": "node myApp.js"
   },
   "author": "Peter Nguyen",
+  "engines": {
+    "node": "8.15.0",
+    "npm": "6.4.1"
+  },
   "keywords": [
     "node",
     "hyperdev",
