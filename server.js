@@ -26,7 +26,7 @@ app.get('/file/*?', function (req, res, next) {
 });
 
 
-var main = require('./myApp.js');
+var main = require('./myApp');
 app.get('/app-info', function (req, res) {
 
     // list middlewares mounted on the '/' camper's app
