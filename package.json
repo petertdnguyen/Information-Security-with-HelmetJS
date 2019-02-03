@@ -1,11 +1,10 @@
 {
-  "name": "helmetjs_tutorials",
-  "version": "1.0.0",
-  "description": "Learning FCC tutorials",
+  "name": "fcc-infosec-challenges",
+  "version": "0.0.1",
+  "description": "fcc backend boilerplate",
   "main": "server.js",
   "scripts": {
-    "start": "node myApp.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node myApp.js"
   },
   "author": "Peter Nguyen",
   "keywords": [

@@ -9,15 +9,15 @@ var app = express();              // Do Not Edit
 // ----
 
 /** - Challenges - *
-********************/ 
+********************/
 
 /** 1) Install and require `helmet` */
 
 // [Helmet](https://github.com/helmetjs/helmet) helps you secure your
 // Express apps by setting various HTTP headers.
 // Install the package, then require it.
-//npm install helmet
-var helmet = require('helmet');
+
+
 
 /** 2) Hide potentially dangerous information - `helmet.hidePoweredBy()` */
 
@@ -46,7 +46,7 @@ var helmet = require('helmet');
 // We don't need our app to be framed, so you should use `helmet.frameguard()`
 // passing to it the configuration object `{action: 'deny'}`
 
- 
+
 
 /** 4) Mitigate the risk of XSS - `helmet.xssFilter()` */
 
@@ -113,14 +113,14 @@ var helmet = require('helmet');
 // set the field `force` to `true` in the config object. To not alter hyperdev security 
 // policy we will intercept and restore the header, after inspecting it for testing.
 
-var ninetyDaysInMilliseconds = 90*24*60*60*1000;
+var ninetyDaysInMilliseconds = 90 * 24 * 60 * 60 * 1000;
 
 
 //**Note**:
 // Configuring HTTPS on a custom website requires the acquisition of a domain,
 // and a SSL/TSL Certificate.
 
-/** 8) Disable DNS Prefetching - `helmet.dnsPrefetchControl()` */
+/** 8 Disable DNS Prefetching - `helmet.dnsPrefetchControl()` */
 
 // To improve performance, most browsers prefetch DNS records for the links in
 // a page. In that way the destination ip is already known when the user clicks on a link.
@@ -177,7 +177,7 @@ var ninetyDaysInMilliseconds = 90*24*60*60*1000;
 
 
 
-/** TIP: */ 
+/** TIP: */
 
 // `app.use(helmet())` will automatically include all the middleware
 // presented above, except `noCache()`, and `contentSecurityPolicy()`,
@@ -205,7 +205,7 @@ var ninetyDaysInMilliseconds = 90*24*60*60*1000;
 // ---- DO NOT EDIT BELOW THIS LINE ---------------------------------------
 
 module.exports = app;
-var api = require('./server');
+var api = require('./server.js');
 app.use(express.static('public'));
 app.disable('strict-transport-security');
 app.use('/_api', api);

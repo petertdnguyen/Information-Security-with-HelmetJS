@@ -1,3 +1,3 @@
-# Free Code Camp - Applied InfoSec Challenges!
+# Free Code Camp - Applied InfoSec Challenges
 =============================================
-
+​
